@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizy</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Quizes.css">
+</head>
+<body>
+    <nav>
+        <label class="logo">Quizy</label>
+        <ul>
+            <li><a href="index.html" id="homeTab">Home</a></li>
+            <li><a href="About.html" id="aboutTab">About</a></li>
+            <li><a href="Quizes.html" id="quizesTab">Quizes</a></li>
+            <li>
+            <div class="searchBoxContainer">
+                <img src="search.png" id="searchIcon" height="18px" width="18x">
+                <input type="search" id="searchBar" placeholder="Search" src="search.png">
+            </div>
+            </li>
+            <li>
+                <div class="profileContainer">
+                    <img src="profile.png" height="30px" width="30x" id="profileIcon">
+                    <button type="button" class="profileButton">Ralph</button>
+                </div>
+            </li>
+            
+            <li>
+                <div id="menuIconContainer">
+                    <button type="button" id="menuIcon"><i class="fa-solid fa-bars" id="physicalIcon"></i></i></button>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <br>
+    
+    <div class="quizesContainer">
+        <h1>You are in Quizes Tab</h1>
+        <label>Study mode</label>
+        <label>Quiz mode</label>
+        <label id="correctScore">Correct: 0</label>
+        <label id="wrongScore">Wrong: 0</label>
+        <div class="dropdown">
+            <button class="dropdown-btn">Flash Cards <i class="fa-solid fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="#">Typed</a>
+                <a href="#">Mixed</a>
+            </div>
+        </div>
+            <div class="flashCard">
+                <p id="myQuestion"></p>
+            </div>
+            <br>
+            <div class="checkOrWrongContainer">
+                <button type="button" id="physicalGoBackButton"><i class="fa-solid fa-arrow-rotate-right fa-flip-horizontal"></i></button>
+                <button type="button" id="physicalWrongButton"><i class="fa-solid fa-xmark" id="wrongButton"></i></button>
+                <label id="progressNumber">0/0</label>
+                <button type="button" id="physicalCheckButton"><i class="fa-solid fa-check" id="checkButton"></i></button>
+                <button type="button" id="physicalResetButton"><i class="fa-solid fa-repeat"></i></button>
+            </div>
+            
+    </div>
+
+    
+
+    <script src="quizes.js" type="module"></script>
+</body>
+</html>

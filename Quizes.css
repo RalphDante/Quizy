@@ -1,0 +1,344 @@
+/* Global */
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    color:rgb(0, 78, 78);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(228, 228, 228);
+    font-family: sans-serif;
+    }
+
+
+/* Navbar */
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+nav {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: white;
+    height: 58px;
+}
+
+
+.logo{
+    font-size: 30px;
+    font-family: sans-serif;
+    line-height: 55px;
+    padding: 30px;
+    color: rgb(0, 124, 124);
+    margin-right: 0px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 30px;
+    line-height: 50px;
+    padding-top: 3px;
+}
+
+nav ul li{
+    display: inline-block;
+    font-size: 18px;
+}
+
+nav ul li a{
+    color: rgb(0, 184, 184);
+    margin-right: 70px;
+    display: inline-block;
+}
+
+nav ul li a:hover{
+    position: relative;
+    background: linear-gradient(white 90%, rgb(0, 184, 184) 10%);
+    border-radius: 3px;
+    transition: all 0.30s ease-in-out;
+    padding-top: 20px;
+    height: 54px;
+    padding: 0px;
+    width: auto;
+}
+
+/* About Tab */
+
+#quizesTab{
+    position: relative;
+    background: linear-gradient(white 90%, rgb(0, 184, 184) 10%);
+    height: 54px;
+    border-radius: 3px;
+}
+
+/* search bar */
+
+.searchBoxContainer{
+    position: relative;
+    
+}
+
+#searchBar{
+    width: 400px;
+    height: 35px;
+    border-radius: 25px;
+    border-color: rgb(192, 191, 191);
+    background-color: rgb(228, 228, 228);
+    border-width: 1px;
+    border-style: solid;
+    padding-left: 30px;
+    padding-right: 20px;
+    background: ("/images/search.png");
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    position:relative;
+    z-index: 1;
+    margin-right: 150px;
+}
+
+#searchBar:focus{
+    outline: none;
+    border-style: solid;
+    border-width: none;
+    border-color: rgb(117, 117, 117);
+}
+
+#searchIcon{
+    margin-top: 17px;
+    margin-left: 7px;
+    position:absolute;
+    z-index: 2;
+}
+
+
+/* Profile Icon */
+
+.profileContainer{
+    position: relative;
+    width: 150px;
+}
+
+#profileIcon{
+    padding-top: 0px;
+    position: absolute;
+    margin-top: 11px;
+    z-index: 1;
+}
+
+.profileButton{
+    margin-right: px;
+    padding-left: 40px;
+    padding-right: 60px;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    font-size: 17px;
+    cursor: pointer;
+    background: none;
+    z-index: 2;
+    font-family: sans-serif;
+    color: rgb(0, 184, 184);
+    border: none; /*turn this off if you wanna see its size*/
+} 
+
+/* Menu Icon */
+
+#menuIconContainer{
+    position: relative;
+    width: 30px;
+    color: aqua;
+    margin-right: 30px;
+    
+}
+
+#menuIcon{
+    position: relative;
+    font-size: 23px;
+    margin-top: 12px;
+    background: none;
+    border: none;
+    margin-left: 30px;
+    color: rgb(126, 126, 126);
+}
+
+/* Quizes Div*/
+
+
+
+.quizesContainer{
+    margin: 100px;
+    margin-top: 30px;
+    padding: 0px;
+    background-color: none; /*check to see the size of the div*/
+    width: 800px;
+}
+
+/* Flash Card */
+
+.flashCard{
+    height: 400px;
+    width: 800px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 30px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4);
+    border-radius: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flashCard:hover{
+    cursor: pointer;
+}
+
+#myQuestion{
+    font-size: 30px;
+}
+
+/* Know or Don't Know Buttons*/
+
+.checkOrWrongContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#progressNumber{
+    margin-right: 25px;
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+#physicalWrongButton{
+    background: rgb(255, 255, 255);
+    border-radius: 100%;
+    padding-left: 1px;
+    padding-right: 1px;
+    border-color: rgb(192, 192, 192);
+    border-style: solid;
+}
+
+#physicalWrongButton:hover{
+    cursor: pointer;
+    background: rgb(230, 230, 230);
+    color: red;
+}
+
+#physicalCheckButton{
+    background: rgb(255, 255, 255);
+    border-radius: 100%;
+    border-color: rgb(192, 192, 192);
+    border-style: solid;
+    
+}
+
+#physicalCheckButton:hover{
+    background: rgb(230, 230, 230);
+    cursor: pointer;
+    color: rgb(0, 255, 0);
+}
+
+
+#checkButton{
+    font-size: 30px;
+    border-radius: 100%;
+    padding: 10px;
+    padding-left: 13px;
+    
+
+}
+
+#wrongButton{
+    font-size: 30px;
+    border-radius: 100%;
+    padding: 10px;
+    padding-left: 13px;
+    padding-right: 13px;
+
+    
+}
+
+
+/* Go back button*/
+
+#physicalGoBackButton{
+    font-size: 18px;
+    border-radius: 100%;
+    padding: 10px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-color: rgb(192, 192, 192);
+    border-style: solid;
+    background: rgb(255, 255, 255);
+}
+
+#physicalGoBackButton:hover{
+    cursor: pointer;
+    background: rgb(230, 230, 230);
+
+}
+
+/* Reset Flash Cards */
+
+#physicalResetButton{
+    font-size: 18px;
+    border-radius: 100%;
+    padding: 10px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-color: rgb(192, 192, 192);
+    border-style: solid;
+    background: rgb(255, 255, 255);
+}
+#physicalResetButton:hover{
+    cursor: pointer;
+    background: rgb(230, 230, 230);
+
+}
+
+
+/* Dropdown Button */
+.dropdown-btn {
+    background-color: #fff;
+    color: #333;
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  
+/* Dropdown Content (Hidden by Default) */
+
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #e6c3c3;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+z-index: 1;
+}
+
+/* Dropdown Links */
+.dropdown-content a {
+color: #333;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+/* Show Dropdown Content on Hover */
+.dropdown:hover .dropdown-content {
+display: block;
+}
